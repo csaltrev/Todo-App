@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>To-Do App</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>To-Do App</h1>
+
+        <div class="">
+            <button type="button" onclick="handler.toggleAll()">Toggle All</button>
+        </div>
+
+        <div class="">
+            <button type="button" onclick="handler.addTodo()">Add</button>
+            <input type="text" id="add-todo-text" placeholder="Enter a to-do...">
+        </div>
+
+        <div class="">
+            <button type="button" onclick="handler.changeTodo()">Change</button>
+            <input type="number" id="change-todo-index-input" placeholder="Enter the to-do position...">
+            <input type="text" id="change-todo-text-input" placeholder="Enter the new to-do text...">
+        </div>
+
+        <div class="">
+            <button type="button" onclick="handler.toggleCompleted()">Toggle</button>
+            <input type="number" id="toggle-completed-index-input" placeholder="Enter the to-do position...">
+        </div>
+
+        <ul></ul>
+
+        <script src="script.js"></script>
+    </body>
+</html>
